@@ -16,13 +16,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 95%;
     z-index: 1000;
     background-color: white; /* Opcional: adiciona um fundo para evitar sobreposição */
 }
 
 #banner img {
-    max-width: 100%;
+    max-width: 90%;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -167,9 +167,11 @@
 </head>
 <body>
  <div id="banner">
-    <img id="bannerImg" src="" alt="Banner Publicitário">
+    <a href="https://sites.google.com/view/palavraeacao/qual-%C3%A9-a-m%C3%BAsica" target="_blank">
+        <img id="bannerImg" src="banner1.jpg" alt="Banner Publicitário">
+    </a>
 </div>
-  
+ 
 <div id="quiz-container">
     <h2>Teste seus conhecimentos sobre música!</h2>
 
@@ -225,8 +227,7 @@
 </div>
 
    <script>
-         
-     
+    
      // Função de compartilhamento
     function shareGame() {
         const gameUrl = "https://radialistaedsonleite.github.io/jogos-HTML/"; // Link fixo do jogo
@@ -386,7 +387,7 @@ function showEndGameButtons() {
                     feedbackElement.textContent = '';
                 }, 700);
             } else {
-                setTimeout(showEndGameButtons, 1000);
+                setTimeout(showEndGameButtons, 700);
             }
         }
       document.addEventListener('DOMContentLoaded', function() {
@@ -415,7 +416,7 @@ function showEndGameButtons() {
         }
 
         document.getElementById("bannerImg").src = 
-            "https://radialistaedsonleite.github.io/qualmusica1/" + shuffledBanners[currentIndex];
+            "https://radialistaedsonleite.github.io/propagandas/" + shuffledBanners[currentIndex];
 
         currentIndex++;
     }
